@@ -1,0 +1,15 @@
+name: ci
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    uses: Kautiontape/ci/.github/workflows/node.yml@main
+    with:
+      node-version: "22"
+      run: "npm run build"
