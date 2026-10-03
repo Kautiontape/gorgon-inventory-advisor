@@ -207,7 +207,7 @@ export function StorageSection({ analyzed, indexes, character }: Props) {
                       }
                     />
                     {removable > 0 && (
-                      <span className="inline-block mt-1 text-xs text-action-red bg-action-red-dim px-2 py-0.5 rounded">
+                      <span className="inline-block mt-1 text-xs text-action-red bg-action-red-dim px-2 py-0.5 rounded-sm">
                         {removable} to clear
                       </span>
                     )}
@@ -246,7 +246,7 @@ export function StorageSection({ analyzed, indexes, character }: Props) {
                   </h4>
                   <div className="space-y-1">
                     {vaults.map(({ key, npcName, slots, restriction }) => (
-                      <div key={key} className="flex items-center justify-between bg-gorgon-panel rounded px-3 py-2">
+                      <div key={key} className="flex items-center justify-between bg-gorgon-panel rounded-sm px-3 py-2">
                         <div>
                           <span className="text-sm text-gorgon-text-bright">{npcName}</span>
                           {restriction && (
@@ -288,7 +288,7 @@ export function StorageSection({ analyzed, indexes, character }: Props) {
                   </h4>
                   <div className="space-y-1">
                     {vaults.map(({ key, npcName, requiredFavor, playerFavor }) => (
-                      <div key={key} className="flex items-center justify-between bg-gorgon-panel/50 rounded px-3 py-2 opacity-60">
+                      <div key={key} className="flex items-center justify-between bg-gorgon-panel/50 rounded-sm px-3 py-2 opacity-60">
                         <div>
                           <span className="text-sm text-gorgon-text">{npcName}</span>
                           {playerFavor && (

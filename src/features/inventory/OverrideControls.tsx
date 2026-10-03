@@ -73,7 +73,7 @@ export function OverrideControls({ itemName, overrideKey, onClose }: Props) {
           value={reason}
           onChange={(e) => setReason(e.target.value)}
           className="flex-1 bg-gorgon-dark border border-gorgon-border text-gorgon-text
-                     px-2.5 py-1.5 rounded text-sm outline-none"
+                     px-2.5 py-1.5 rounded text-sm outline-hidden"
         />
         <label className="flex items-center gap-1 text-sm text-gorgon-text-dim">
           Keep:
@@ -83,7 +83,7 @@ export function OverrideControls({ itemName, overrideKey, onClose }: Props) {
             value={keepQty}
             onChange={(e) => setKeepQty(e.target.value)}
             className="w-14 bg-gorgon-dark border border-gorgon-border text-gorgon-text
-                       px-1.5 py-1.5 rounded text-sm text-center outline-none"
+                       px-1.5 py-1.5 rounded text-sm text-center outline-hidden"
           />
         </label>
         <button

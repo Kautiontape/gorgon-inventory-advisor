@@ -44,7 +44,7 @@ export function Drawer({ open, onClose, title, children, width = 'max-w-lg' }: D
         aria-modal="true"
         aria-label={title}
       >
-        <div className="sticky top-0 bg-gorgon-panel/95 backdrop-blur-sm border-b border-gorgon-border px-6 py-4 flex items-center justify-between z-10">
+        <div className="sticky top-0 bg-gorgon-panel/95 backdrop-blur-xs border-b border-gorgon-border px-6 py-4 flex items-center justify-between z-10">
           {title && (
             <h2 className="font-display text-lg text-gorgon-text-bright">{title}</h2>
           )}

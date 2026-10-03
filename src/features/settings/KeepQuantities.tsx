@@ -33,7 +33,7 @@ export function KeepQuantitiesEditor() {
           value={search}
           onChange={(e) => setSearch(e.target.value)}
           className="w-full bg-gorgon-dark border border-gorgon-border text-gorgon-text
-                     px-3 py-2 rounded-md text-sm outline-none mb-3
+                     px-3 py-2 rounded-md text-sm outline-hidden mb-3
                      placeholder:text-gorgon-text-dim"
         />
       )}
@@ -43,7 +43,7 @@ export function KeepQuantitiesEditor() {
           {entries.map(([name, qty]) => (
             <div
               key={name}
-              className="flex items-center gap-2 px-2 py-1 rounded bg-gorgon-panel"
+              className="flex items-center gap-2 px-2 py-1 rounded-sm bg-gorgon-panel"
             >
               <span className="flex-1 text-sm truncate text-gorgon-text">
                 {name}
@@ -57,7 +57,7 @@ export function KeepQuantitiesEditor() {
                   void persistToDb();
                 }}
                 className="w-14 bg-gorgon-dark border border-gorgon-border text-gorgon-text-bright
-                           px-1 py-0.5 rounded text-sm text-center outline-none"
+                           px-1 py-0.5 rounded text-sm text-center outline-hidden"
               />
             </div>
           ))}

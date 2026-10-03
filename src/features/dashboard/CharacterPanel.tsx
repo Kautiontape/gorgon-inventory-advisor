@@ -26,7 +26,7 @@ export function CharacterPanel({ character, build }: Props) {
           </p>
           <div className="flex gap-2 flex-wrap">
             {build.primarySkills.map((skill) => (
-              <span key={skill} className="text-sm text-action-green bg-action-green-dim px-2 py-0.5 rounded">
+              <span key={skill} className="text-sm text-action-green bg-action-green-dim px-2 py-0.5 rounded-sm">
                 {skill} {formatSkillLevel(
                   character.Skills[skill]?.Level ?? 0,
                   character.Skills[skill]?.BonusLevels ?? 0,
@@ -37,7 +37,7 @@ export function CharacterPanel({ character, build }: Props) {
           {build.supportSkills.length > 0 && (
             <div className="flex gap-2 flex-wrap mt-1">
               {build.supportSkills.map((skill) => (
-                <span key={skill} className="text-xs text-gorgon-text-dim bg-gorgon-card px-2 py-0.5 rounded">
+                <span key={skill} className="text-xs text-gorgon-text-dim bg-gorgon-card px-2 py-0.5 rounded-sm">
                   {skill} {character.Skills[skill]?.Level ?? 0}
                 </span>
               ))}
