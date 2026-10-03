@@ -17,7 +17,7 @@ export function AppHeader() {
   ];
 
   return (
-    <header className="border-b border-gorgon-border bg-gorgon-panel/80 backdrop-blur-sm sticky top-0 z-50">
+    <header className="border-b border-gorgon-border bg-gorgon-panel/80 backdrop-blur-xs sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3 flex items-center flex-wrap gap-3">
         <Link to="/dashboard" className="font-display text-lg text-gorgon-text-bright tracking-wide shrink-0">
           GIA

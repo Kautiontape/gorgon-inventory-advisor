@@ -21,7 +21,7 @@ export function NpcFilters({ filters, onChange, areas, favorLevels }: Props) {
         placeholder="Search NPCs..."
         value={filters.search}
         onChange={(e) => update({ search: e.target.value })}
-        className="bg-gorgon-dark border border-gorgon-border rounded-lg px-3 py-1.5 text-sm text-gorgon-text placeholder:text-gorgon-text-dim focus:outline-none focus:border-gorgon-text-dim w-40"
+        className="bg-gorgon-dark border border-gorgon-border rounded-lg px-3 py-1.5 text-sm text-gorgon-text placeholder:text-gorgon-text-dim focus:outline-hidden focus:border-gorgon-text-dim w-40"
       />
 
       {/* Item name search */}
@@ -30,14 +30,14 @@ export function NpcFilters({ filters, onChange, areas, favorLevels }: Props) {
         placeholder="Search items..."
         value={filters.itemSearch}
         onChange={(e) => update({ itemSearch: e.target.value })}
-        className="bg-gorgon-dark border border-gorgon-border rounded-lg px-3 py-1.5 text-sm text-gorgon-text placeholder:text-gorgon-text-dim focus:outline-none focus:border-gorgon-text-dim w-40"
+        className="bg-gorgon-dark border border-gorgon-border rounded-lg px-3 py-1.5 text-sm text-gorgon-text placeholder:text-gorgon-text-dim focus:outline-hidden focus:border-gorgon-text-dim w-40"
       />
 
       {/* Area filter */}
       <select
         value={filters.areaFilter}
         onChange={(e) => update({ areaFilter: e.target.value })}
-        className="bg-gorgon-dark border border-gorgon-border rounded-lg px-3 py-1.5 text-sm text-gorgon-text focus:outline-none"
+        className="bg-gorgon-dark border border-gorgon-border rounded-lg px-3 py-1.5 text-sm text-gorgon-text focus:outline-hidden"
       >
         <option value="all">All Areas</option>
         {areas.map((a) => (
@@ -49,7 +49,7 @@ export function NpcFilters({ filters, onChange, areas, favorLevels }: Props) {
       <select
         value={filters.desireFilter}
         onChange={(e) => update({ desireFilter: e.target.value })}
-        className="bg-gorgon-dark border border-gorgon-border rounded-lg px-3 py-1.5 text-sm text-gorgon-text focus:outline-none"
+        className="bg-gorgon-dark border border-gorgon-border rounded-lg px-3 py-1.5 text-sm text-gorgon-text focus:outline-hidden"
       >
         <option value="all">Any Gifts</option>
         <option value="love">Love Only</option>
@@ -60,7 +60,7 @@ export function NpcFilters({ filters, onChange, areas, favorLevels }: Props) {
       <select
         value={filters.priorityFilter}
         onChange={(e) => update({ priorityFilter: e.target.value })}
-        className="bg-gorgon-dark border border-gorgon-border rounded-lg px-3 py-1.5 text-sm text-gorgon-text focus:outline-none"
+        className="bg-gorgon-dark border border-gorgon-border rounded-lg px-3 py-1.5 text-sm text-gorgon-text focus:outline-hidden"
       >
         <option value="all">All NPCs</option>
         <option value="priority">Priority Only</option>
@@ -72,7 +72,7 @@ export function NpcFilters({ filters, onChange, areas, favorLevels }: Props) {
       <select
         value={filters.favorFilter}
         onChange={(e) => update({ favorFilter: e.target.value })}
-        className="bg-gorgon-dark border border-gorgon-border rounded-lg px-3 py-1.5 text-sm text-gorgon-text focus:outline-none"
+        className="bg-gorgon-dark border border-gorgon-border rounded-lg px-3 py-1.5 text-sm text-gorgon-text focus:outline-hidden"
       >
         <option value="all">All Favor</option>
         {favorLevels.map((f) => (
@@ -84,7 +84,7 @@ export function NpcFilters({ filters, onChange, areas, favorLevels }: Props) {
       <select
         value={filters.metFilter}
         onChange={(e) => update({ metFilter: e.target.value })}
-        className="bg-gorgon-dark border border-gorgon-border rounded-lg px-3 py-1.5 text-sm text-gorgon-text focus:outline-none"
+        className="bg-gorgon-dark border border-gorgon-border rounded-lg px-3 py-1.5 text-sm text-gorgon-text focus:outline-hidden"
       >
         <option value="all">Met & Unmet</option>
         <option value="met">Met Only</option>

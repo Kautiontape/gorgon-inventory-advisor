@@ -19,7 +19,7 @@ export function NpcGiftTable({ gifts, onItemClick }: Props) {
       {gifts.map((gift) => (
         <div
           key={`${gift.typeId}_${gift.vaultName}_${gift.source}`}
-          className={`flex items-center gap-2 px-2 py-1.5 rounded hover:bg-gorgon-hover text-sm${onItemClick ? ' cursor-pointer' : ''}`}
+          className={`flex items-center gap-2 px-2 py-1.5 rounded-sm hover:bg-gorgon-hover text-sm${onItemClick ? ' cursor-pointer' : ''}`}
           onClick={onItemClick ? () => onItemClick(gift) : undefined}
         >
           <span
@@ -47,7 +47,7 @@ export function NpcGiftTable({ gifts, onItemClick }: Props) {
           )}
 
           {gift.source === 'craftable' && (
-            <span className="text-xs px-1.5 py-0.5 rounded border text-action-cyan border-action-cyan/30 bg-action-cyan/10">
+            <span className="text-xs px-1.5 py-0.5 rounded-sm border text-action-cyan border-action-cyan/30 bg-action-cyan/10">
               Craft
             </span>
           )}

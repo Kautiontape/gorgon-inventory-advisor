@@ -51,7 +51,7 @@ export function ItemDetailDrawer({ item, onClose, character, indexes, build }: P
                 alt=""
                 width={48}
                 height={48}
-                className="rounded shrink-0"
+                className="rounded-sm shrink-0"
                 onError={(e) => { e.currentTarget.style.display = 'none'; }}
               />
             )}

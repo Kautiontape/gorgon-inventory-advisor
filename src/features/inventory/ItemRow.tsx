@@ -39,7 +39,7 @@ export const ItemRow = memo(function ItemRow({ item, onItemClick, indexes }: Pro
           width={32}
           height={32}
           loading="lazy"
-          className="rounded"
+          className="rounded-sm"
           onError={(e) => { e.currentTarget.style.display = 'none'; }}
         />
       ) : (

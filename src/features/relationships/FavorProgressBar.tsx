@@ -22,7 +22,7 @@ export function FavorProgressBar({ currentTier }: Props) {
         {FAVOR_TIER_ORDER.map((tier, idx) => (
           <div
             key={tier}
-            className={`h-2 flex-1 rounded-sm transition-colors ${
+            className={`h-2 flex-1 rounded-xs transition-colors ${
               idx <= currentIdx
                 ? idx === currentIdx
                   ? 'bg-action-green'

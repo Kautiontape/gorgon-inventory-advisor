@@ -24,11 +24,11 @@ interface Props {
 }
 
 const selectClass = `bg-gorgon-card border border-gorgon-border text-gorgon-text
-  px-2.5 py-1.5 rounded-md text-sm outline-none min-w-[140px]
+  px-2.5 py-1.5 rounded-md text-sm outline-hidden min-w-[140px]
   focus:border-gorgon-border-light`;
 
 const inputClass = `bg-gorgon-card border border-gorgon-border text-gorgon-text
-  px-2.5 py-1.5 rounded-md text-sm outline-none min-w-[180px]
+  px-2.5 py-1.5 rounded-md text-sm outline-hidden min-w-[180px]
   focus:border-gorgon-border-light placeholder:text-gorgon-text-dim`;
 
 export function Toolbar({

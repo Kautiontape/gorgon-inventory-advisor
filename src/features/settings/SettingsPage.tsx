@@ -55,7 +55,7 @@ export function SettingsPage() {
             </p>
             <div className="space-y-1 max-h-60 overflow-y-auto">
               {regularOverrides.map(([name, ov]) => (
-                <div key={name} className="flex items-center justify-between text-sm bg-gorgon-panel px-3 py-1.5 rounded">
+                <div key={name} className="flex items-center justify-between text-sm bg-gorgon-panel px-3 py-1.5 rounded-sm">
                   <span className="text-gorgon-text">{name}: <span className="text-gorgon-text-dim">{ov.action}</span></span>
                   <span className="text-xs text-gorgon-text-dim">{ov.reason}</span>
                 </div>
@@ -82,7 +82,7 @@ export function SettingsPage() {
             </p>
             <div className="space-y-1 max-h-60 overflow-y-auto">
               {archivedOverrides.map(([name]) => (
-                <div key={name} className="flex items-center justify-between text-sm bg-gorgon-panel px-3 py-1.5 rounded">
+                <div key={name} className="flex items-center justify-between text-sm bg-gorgon-panel px-3 py-1.5 rounded-sm">
                   <span className="text-gorgon-text">{name}</span>
                   <button
                     onClick={() => { clearOverride(name); void persistToDb(); }}

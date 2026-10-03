@@ -52,7 +52,7 @@ export function BuildConfigEditor({ character, indexes, buildConfig }: Props) {
   }
 
   const selectClass = `bg-gorgon-dark border border-gorgon-border text-gorgon-text
-    px-2.5 py-1.5 rounded text-sm outline-none`;
+    px-2.5 py-1.5 rounded text-sm outline-hidden`;
 
   return (
     <Card title="Combat Build Configuration">
@@ -95,7 +95,7 @@ export function BuildConfigEditor({ character, indexes, buildConfig }: Props) {
           <p className="text-xs text-gorgon-text-dim mb-1">Support Skills (auto-detected)</p>
           <div className="flex gap-1.5 flex-wrap">
             {buildConfig.supportSkills.map((skill) => (
-              <span key={skill} className="text-xs bg-gorgon-panel text-gorgon-text-dim px-2 py-0.5 rounded">
+              <span key={skill} className="text-xs bg-gorgon-panel text-gorgon-text-dim px-2 py-0.5 rounded-sm">
                 {skill} {character.Skills[skill]?.Level ?? 0}
               </span>
             ))}
